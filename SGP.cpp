@@ -8,9 +8,6 @@
 
 #include "ARSS.h"
 #include "SGP.h"
-#ifdef HAVE_CUDA_TK
-#include "cugrav.h"
-#endif
 
 // Request lint level warnings with the LINT macro on Microsoft compilers
 #ifdef LINT

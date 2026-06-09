@@ -23,11 +23,6 @@
 #include "IL/ilut.h"					// |
 #include "PxPhysicsAPI.h"				// The entire PhysX API in a single header (including many functions we don't need but this is easiest).
 using namespace physx;					//
-#ifdef HAVE_CUDA_TK
-#include "cuda.h"						// |
-#include "cuda_runtime.h"				// | The CUDA API
-#include "device_launch_parameters.h"	// |
-#endif
 // Named constants with ARSS scope
 #define MAX_KEYBOARD_KEYS 256
 #define MAX_ACTORS_PER_SCENE 16284
