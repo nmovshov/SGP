@@ -77,14 +77,22 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\include;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\include;C:\Users\nmovs\GitHub\SGP\extern\ncclib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glut32.lib;ILU.lib;ILUT.lib;DevIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64\*.dll" "$(TargetDir)"
+xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64\*.dll" "$(TargetDir)"</Command>
+      <Message>moving dlls to target directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -95,14 +103,22 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\include;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\include;C:\Users\nmovs\GitHub\SGP\extern\ncclib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glut32.lib;ILU.lib;ILUT.lib;DevIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64\*.dll" "$(TargetDir)"
+xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64\*.dll" "$(TargetDir)"</Command>
+      <Message>moving dlls to target directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -111,14 +127,22 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\include;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\include;C:\Users\nmovs\GitHub\SGP\extern\ncclib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glut32.lib;ILU.lib;ILUT.lib;DevIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64\*.dll" "$(TargetDir)"
+xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64\*.dll" "$(TargetDir)"</Command>
+      <Message>moving dlls to target directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -129,17 +153,36 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\include;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\include;C:\Users\nmovs\GitHub\SGP\extern\ncclib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64;C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glut32.lib;ILU.lib;ILUT.lib;DevIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\glut\win32\lib\x64\*.dll" "$(TargetDir)"
+xcopy /y /d "C:\Users\nmovs\GitHub\SGP\extern\DevIL\win32\lib\x64\*.dll" "$(TargetDir)"</Command>
+      <Message>moving dlls to target directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ARSS.cpp" />
+    <ClCompile Include="Drawers.cpp" />
+    <ClCompile Include="extern\ncclib\ncclib.cpp" />
+    <ClCompile Include="HUD.cpp" />
     <ClCompile Include="SGP.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ARSS.h" />
+    <ClInclude Include="Drawers.h" />
+    <ClInclude Include="extern\ncclib\ncclib.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="SGP.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
